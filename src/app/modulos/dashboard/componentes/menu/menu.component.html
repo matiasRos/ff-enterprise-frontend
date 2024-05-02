@@ -1,0 +1,9 @@
+<div class="menu-container">
+    <ul>
+        <li class="menu-item" *ngFor="let menu of menus" routerLink="{{menu.url}}">
+            <i-feather class="title-icon" name="{{menu.icon_title}}"></i-feather>&nbsp;&nbsp;
+            <span>{{menu.title}}</span> 
+            <i-feather name="{{menu.icon_action}}"></i-feather>
+        </li>
+    </ul>
+</div>

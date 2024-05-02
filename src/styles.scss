@@ -1,0 +1,138 @@
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "styles/variables";
+@import "styles/colors";
+@import "styles/buttons";
+@import "styles/forms";
+
+
+@font-face {
+    font-family: "ff-font";
+    src: url("assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Regular.ttf") format("woff"),
+        url("assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'ff-font-black';
+    src: url('assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Black.ttf') format('woff2'),
+        url('assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Black.ttf') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ff-font-bold';
+    src: url('assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Bold.ttf') format('woff2'),
+        url('assets/fonts/tt/TT\ Interphases\ Pro\ Trial\ Bold.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+* {
+    touch-action: manipulation;
+}
+
+body {
+    font-family: $ff-font;
+}
+
+
+.mat-drawer-container {
+    background-color: white !important;
+    overflow: unset !important;
+    height: 100%;
+}
+
+.main-wrapper {
+    height: 100vh;
+    margin: 0;
+}
+
+.subheader {
+    height: 200px;
+    background-color: $grey-800; 
+    color: white;
+    display: flex;
+    padding-top: 18rem;
+    align-items: center;
+    .empresa{
+        font-family: $ff-font-bold !important;
+    }
+    
+
+    .add-pedido{
+        border: 1px solid #353535;
+        background-color: $brand-apple-green-20;
+        border-radius: 12px;
+        height: 150px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+        p{
+            font-size: 18px;
+            margin: 0;
+            color: black;
+        }
+        i-feather{
+            color: $brand-apple-green-100;
+        }
+    }
+    .add-pedido:hover{
+        background-color: darken($brand-apple-green-20, 5%);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px;
+      .container {
+        flex-direction: column;
+        .data-logo{
+            width: 100%; 
+            height: 35px !important;
+        }
+        .data-user {
+          width: 100%; 
+          text-align: center;
+        }
+      }
+    }
+    .subheader {
+        height: 130px;
+        align-items: flex-start;
+        padding-top: 1rem;
+        .empresa{
+      
+        }
+        .add-pedido{
+            height: 150px;
+            border: 0px solid #353535;
+        }
+    }
+  }
+
+  .text-bold{
+    font-weight: bold;
+  }
+
+  .list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+
+  .footer-actions{
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    left: 0;
+  }

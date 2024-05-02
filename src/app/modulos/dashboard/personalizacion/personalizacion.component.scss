@@ -1,0 +1,12 @@
+.text-bold {
+    position: sticky;
+    top: 0;
+    background: white; 
+    z-index: 100;
+    padding: 10px 0; 
+    border-bottom: 1px solid #ccc; 
+}
+.list-container {
+    height: 400px; 
+    overflow-y: auto;
+}

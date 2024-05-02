@@ -1,0 +1,19 @@
+
+@import "../../../../../styles/colors";
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px 6px 14px;
+    cursor: pointer;
+    background-color: $grey-250;
+    border-radius: 12px;
+  }
+  .item.selected {
+    background-color: $brand-apple-green-20;
+    border: 1px solid $brand-apple-green-100;
+  }
+  .checkmark {
+    color: green;
+  }

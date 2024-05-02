@@ -1,0 +1,248 @@
+@import "../styles/colors";
+@import "../styles/variables";
+
+.btn {}
+
+
+.btn-add.btn-remove {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+}
+
+
+.btn-green {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+    background-color: $brand-apple-green-100;
+    border-radius: 30px;
+    color: white;
+}
+
+.btn-green:hover {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+    background-color: $brand-apple-green-80;
+    border-radius: 30px;
+    color: $brand-apple-green-100;
+}
+
+.btn-outline-green {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+    border-radius: 30px;
+    color: $brand-apple-green-100;
+}
+
+.btn-outline-green:hover {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+    background-color: $brand-apple-green-100;
+    border-radius: 30px;
+    color: white;
+}
+
+
+.btn-add,
+.btn-remove {
+    background-color: $grey-200;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-500;
+
+    .feather {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+
+.btn-add:hover,
+.btn-remove:hover {
+    background-color: $brand-apple-green-100;
+    color: white;
+}
+
+.btn-success {
+    border-radius: $border-radius;
+    font-family: $ff-font-bold;
+    background-color: $brand-apple-green-100;
+    border-color: $brand-apple-green-100;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-success:focus-visible {
+    background-color: $brand-apple-green-100;
+    box-shadow: 0 0 0 0.25rem rgba(157, 183, 34, .5);
+    border-color: $brand-apple-green-100;
+}
+
+.btn-success:hover,
+.btn-success:active {
+    border-color: $brand-apple-green-100 !important;
+    background-color: $brand-apple-green-100 !important;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+    pointer-events: none;
+    background-color: $brand-apple-green-100;
+    border-color: $brand-apple-green-100;
+    opacity: 0.5;
+}
+
+
+
+.btn-finalizar {
+    border-radius: $border-radius;
+    font-family: $ff-font-bold;
+    background-color: $brand-salmon-orange-100;
+    border-color: $brand-salmon-orange-100;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.btn-finalizar:focus-visible {
+    background-color: $brand-salmon-orange-100;
+    box-shadow: 0 0 0 0.25rem rgba(157, 183, 34, .5);
+    color: white;
+    border-color: $brand-salmon-orange-100;
+}
+
+.btn-finalizar:hover,
+.btn-finalizar:active {
+    border-color: $brand-salmon-orange-100 !important;
+    color: white;
+    background-color: $brand-salmon-orange-100 !important;
+}
+
+
+
+
+.btn-outline-success {
+    border-radius: $border-radius;
+    font-family: $ff-font-bold;
+    background-color: transparent;
+    color: $brand-apple-green-100;
+    border-color: $brand-apple-green-100;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active {
+    border-color: $brand-apple-green-100 !important;
+    background-color: transparent !important;
+    color: $brand-apple-green-100;
+}
+
+.btn-outline-danger {
+    border-radius: $border-radius;
+    font-family: $ff-font-bold;
+    background-color: transparent;
+    color: $status-red-600;
+    border-color: $status-red-600;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+    border-color: $status-red-600 !important;
+    background-color: transparent !important;
+    color: $status-red-600;
+}
+
+
+.btn-back {
+    border: 1px solid #e5e7eb;
+    display: block;
+    padding: 4px 12px;
+    margin-bottom: 1rem;
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    border: 1px solid #c7c7c9;
+}
+
+
+.btn.in-row {
+    padding: 0px 8px;
+}
+
+.btn-add-carrito {
+    padding: 6px 16px;
+    border: 1px solid $brand-apple-green-100;
+    background-color: $brand-apple-green-100;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-add-carrito:hover {
+    border: 1px solid $brand-apple-green-100;
+    background-color: $brand-apple-green-100;
+    color: white;
+}
+
+.btn-siguiente {
+    padding: 14px 16px;
+    border: 1px solid $status-sky-600;
+    background-color: $status-sky-600;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 100px;
+}
+
+.btn-siguiente:hover {
+    border: 1px solid darken($status-sky-600, 5%);
+    background-color: darken($status-sky-600, 5%);
+    color: white;
+}
+
+.btn-confirmar {
+    padding: 14px 16px;
+    border: 1px solid $status-green-700;
+    background-color: $status-green-700;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 100px;
+}
+
+.btn-confirmar:hover {
+    border: 1px solid darken($status-green-700, 5%);
+    background-color: darken($status-green-700, 5%);
+    color: white;
+}

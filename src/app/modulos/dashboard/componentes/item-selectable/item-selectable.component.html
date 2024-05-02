@@ -1,0 +1,5 @@
+<div class="item" [class.selected]="isSelected" (click)="toggleSelection()">
+    <span>{{ label }}</span>
+    <mat-checkbox [(ngModel)]="isSelected" (change)="selectionChanged.emit(isSelected)" [disabled]="disabled">
+    </mat-checkbox>
+</div>

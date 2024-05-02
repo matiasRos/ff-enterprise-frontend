@@ -1,0 +1,62 @@
+
+@import "../../../../../styles/colors";
+
+.navbar {
+    background-color: $grey-800 !important; 
+    padding: 0.5rem 1rem; 
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  
+      .data-logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 55px;
+      }
+  
+      .data-user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px !important;
+        .user{
+          color: white;
+          font-size: 12pt;
+        }
+        .toggle-menu{
+          cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        i-feather {
+          color: white;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+        height: 50px;
+      .container {
+        flex-direction: column;
+        .data-logo{
+            width: 100%; 
+            height: 35px !important;
+        }
+        .data-user {
+          width: 100%; 
+          text-align: center;
+        }
+      }
+    }
+  }

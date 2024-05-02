@@ -1,0 +1,13 @@
+<div class="container position-relative mt-4">
+    <div class="list-item mb-4" *ngFor="let item of items; let i = index">
+        <h2 class="text-bold">{{item.categoria}}</h2>
+        <app-item-selectable *ngFor="let producto of item.productos;let i2=index" [label]="producto.nombre_producto"
+            [categoria]="item.categoria" [isSelected]="producto.isSelected" [disabled]="true"
+         ></app-item-selectable>
+    </div>
+    <div class="footer-actions">
+        <div class="container">
+            <button class="btn btn-confirmar" (click)="saveAndNext()"> Confirmar personalización </button>
+        </div>
+    </div>
+</div>

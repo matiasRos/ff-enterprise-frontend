@@ -1,0 +1,97 @@
+@use "@angular/material" as mat;
+@import "styles/colors";
+
+@include mat.core();
+
+$custom-primary-map: (
+    50: #e8eaf6,
+    100: #c5cbe9,
+    200: #9fa8da,
+    300: #7985cb,
+    400: #5c6bc0,
+    500: $brand-apple-green-100,
+    600: #394aae,
+    700: #3140a5,
+    800: #29379d,
+    900: #1b278d,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+    ),
+);
+
+$custom-accent-map: (
+    50: #e8eaf6,
+    100: #c5cbe9,
+    200: #9fa8da,
+    300: #7985cb,
+    400: #5c6bc0,
+    500: $brand-apple-green-100,
+    600: #394aae,
+    700: #3140a5,
+    800: #29379d,
+    900: #1b278d,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+    ),
+);
+
+$custom-warn-map: (
+    50: #e8eaf6,
+    100: #c5cbe9,
+    200: #9fa8da,
+    300: #7985cb,
+    400: #5c6bc0,
+    500: $brand-apple-green-100,
+    600: #394aae,
+    700: #3140a5,
+    800: #29379d,
+    900: #1b278d,
+    contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+    ),
+);
+// Defina su propia paleta de colores aquí
+$my-primary: mat.define-palette($custom-primary-map);
+$my-accent: mat.define-palette($custom-accent-map);
+$my-warn: mat.define-palette($custom-warn-map);
+
+// Cree su tema personalizado usando su paleta de colores personalizada y el color primario definido anteriormente
+$my-theme: mat.define-light-theme(
+    (
+        color: (
+            primary: $my-primary,
+            accent: $my-accent,
+            warn: $my-warn,
+        ),
+    )
+);
+
+// Incluya los estilos del tema para todos los componentes de Angular Material que se usan en su aplicación
+@include mat.all-component-themes($my-theme);
